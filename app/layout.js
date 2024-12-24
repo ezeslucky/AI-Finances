@@ -22,7 +22,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main className=" min-h-screen">{children} </main>
+        
+        <footer className=" bg-blue-50 py-12 ">
+          <div className=" container mx-auto px-4 text-center text-green-600">
+            <p>  Made With by Ezeslucky</p>
+          </div>
+        
+        </footer>
       </body>
     </html>
   );
